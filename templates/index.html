@@ -1,0 +1,27 @@
+{% extends 'base.html'%} {% load static %} {% block content %}
+
+<h1 class="text-center my-3 text-warning-emphasis">
+  Welcome to Django Restaurant
+</h1>
+<div class="card mb-3 border-none">
+  <div class="row g-0">
+    <div class="col-md-6">
+      <div class="card-body" style="margin-top: 30%">
+        <h5 class="card-title fs-1 text-end">
+          Powered By Django
+        </h5>
+        <p class="card-text text-end fs-5">
+          we believe that dining is not just about food; it's about creating an experience that engages all your senses. Our culinary journey began with a passion for crafting delightful dishes using the finest, locally-sourced ingredients. From the heart of our kitchen to the warmth of your table, we invite you to savor every moment...
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img
+        src="{% static 'home.avif'%}"
+        class="img-fluid rounded-start height: auto"
+        alt="home page image..."
+      />
+    </div>
+  </div>
+</div>
+{% endblock %}

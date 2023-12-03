@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% load static %} {% block content%}
+<h1 class="text-center mt-5 text-warning-emphasis">About Django Restaurant</h1>
+<div class="d-flex justify-content-center flex-column w-50 mx-auto">
+  <img src="{% static 'about.avif'%}" alt="" class="img-fluid mx-auto rounded" />
+  <p class="text-center fs-5 fw-medium pt-3">
+    we believe that dining is not just about food; it's about creating an experience that engages all your senses. 
+  </p>
+  <p class="text-center fs-5 fw-medium">
+    Our culinary journey began with a passion for crafting delightful dishes using the finest, locally-sourced ingredients. From the heart of our kitchen to the warmth of your table, we invite you to savor every moment..
+  </p>
+</div>
+{% endblock%}
